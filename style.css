@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* SPLASH */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b1020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+#splash.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#splash img {
+  width: 260px;
+}
+
+/* MAIN */
+.hidden {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  background: #0b1020;
+  color: white;
+  padding: 80px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #9ecbff;
+  margin: 10px 0;
+}
+
+.hero-desc {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* TEAM */
+.team-section {
+  padding: 50px 20px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+}
