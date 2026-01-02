@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HEXAURA – The Sixth Energy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splash">
+  <img src="images/logo-full.png" alt="HEXAURA Logo">
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content" class="hidden">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>HEXAURA</h1>
+    <p class="tagline">The Sixth Energy</p>
+    <p class="hero-desc">
+      A multidisciplinary engineering team building a human-centric home assistant.
+    </p>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <h2>Our Team</h2>
+
+    <div class="team">
+
+      <div class="card">
+        <img src="images/m1.jpg">
+        <h3>Elwin Thomas</h3>
+        <p>Captain</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m2.jpg">
+        <h3>Ganesh S Menon</h3>
+        <p>Vice Captain</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m3.jpg">
+        <h3>Chandhana Suresh</h3>
+        <p>Team Member</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m4.jpg">
+        <h3>Elizebeth Cherian</h3>
+        <p>Team Member</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m5.jpg">
+        <h3>Arjun S</h3>
+        <p>Team Member</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m6.jpg">
+        <h3>Dainty Teresa Davis</h3>
+        <p>Team Member</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m7.jpg">
+        <h3>Hassan Mohammed</h3>
+        <p>Team Member</p>
+      </div>
+
+      <div class="card">
+        <img src="images/m8.jpg">
+        <h3>Albert Chery George</h3>
+        <p>Team Member</p>
+      </div>
+
+      <!-- CENTERED 9TH MEMBER -->
+      <div class="card center-card">
+        <img src="images/m9.jpg">
+        <h3>Anandhu Biju</h3>
+        <p>Team Member</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- SPLASH SCRIPT -->
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      const splash = document.getElementById("splash");
+      const main = document.getElementById("main-content");
+
+      splash.classList.add("fade-out");
+      main.classList.remove("hidden");
+
+      setTimeout(() => {
+        splash.style.display = "none";
+      }, 600);
+    }, 2000);
+  });
+</script>
+
+</body>
+</html>
